@@ -46,6 +46,97 @@ font-size: 1rem;
     background-color: #fff;
 }
 
+.nav-dropdown{
+  position: absolute;
+  width: 95%;
+  background-color: white;
+  height: 40vh;
+  top: 101%;
+  left: 2.5%;
+  right: 0%;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: 5px;
+  visibility: hidden;
+  
+}
+
+.nav-categories{
+  /* background-color: yellow; */
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav-categories-dropdown:hover .nav-dropdown{
+  visibility: visible;
+
+}
+
+.more-dropdown a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size:1.2em;
+  
+}
+
+.more-dropdown a:hover{
+  font-weight:bold;
+}
+
+.more-dropdown{
+  width: 13%;
+  height: 24vh;
+  background-color: white;
+  position:absolute;
+  padding: 1.5rem;
+  top: 101%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2em;
+visibility: hidden;
+  border-radius: 5px;
+}
+
+.nav-more-dropdown:hover .more-dropdown{
+  visibility: visible;
+}
+
+
+
+.nav-product-box img{
+   width: 60px;
+}
+
+
+.nav-products{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: yellow; */
+ /* gap: 1rem; */
+ /* margin: 0.2rem; */
+  width: 18%;
+  font-size: 0.9em;
+  margin-left:1rem;
+  /* justify-content: center; */
+  /* transition: 0.3s ease; */
+
+}
+
+.nav-products:hover{
+  opacity: 0.8;
+}
+
+
 .nav-left{
     width: 55%;
     /* background-color: yellow; */
@@ -78,7 +169,7 @@ font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.4em;
 position: relative;
 
 }
@@ -181,8 +272,6 @@ font-size:1.2rem;
 .carousel-cell{
     width: 100vw;
     height: 83vh;
-    /* background-image: linear-gradient(to right bottom, green, red); */
-    /* font-size: 5rem; */
     
 }
 
@@ -190,14 +279,14 @@ font-size:1.2rem;
     width: 100%;
 }
 
-/* position dots in gallery */
+
 .flickity-page-dots {
-    /* bottom: 20%; */
+   
     position: absolute;
     top: 97%;
   
   }
-  /* white circles */
+
   .flickity-page-dots .dot {
     width: 12px;
     height: 12px;
@@ -205,7 +294,7 @@ font-size:1.2rem;
     background: #000;
     border: 2px solid white;
   }
-  /* fill-in selected dot */
+ 
   .flickity-page-dots .dot.is-selected {
     background: white;
   }
@@ -270,8 +359,8 @@ font-size:1.2rem;
 
  .sale-box{
     width: 100%;
-    padding: 1rem 0; 
-    /* background-color: yellow; */
+    padding: 1.5rem 0;
+    /* background-color: yellow;  */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -300,8 +389,8 @@ font-size:1.2rem;
 
  .sale-content::after{
     content: "";
-    width: 12%;
-    height: 1.5px;
+    width: 15%;
+    height: 1.8px;
     position: absolute;
     right: 0;
     background-color: rgb(255, 19, 125);
@@ -338,6 +427,7 @@ margin-top: 3rem;
     width: 100%;
     /* background-color: yellow; */
     height: 60%;
+    overflow: hidden;
     
 }
 
@@ -348,6 +438,12 @@ margin-top: 3rem;
     /* object-position: top; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transform: scale(1);
+    transition: 0.5s ease;
+ }
+
+ .product-img img:hover{
+    transform: scale(1.1);
  }
 
  .playback{
@@ -690,6 +786,11 @@ font-size: 0.6rem;
 margin: 1rem 0.5rem;
 }
 
+.driver1:hover{
+  background-color: black;
+  color: white;
+}
+
 .add{
     background-color: black;
     color: white;
@@ -700,6 +801,10 @@ margin: 1rem 0.5rem;
     padding: 0.8rem;
   border-radius: 12px;
   font-size: 1.2rem;
+}
+
+.add:hover{
+  background-color: rgb(60, 59, 59);
 }
 
 .lifestyle-heading{
@@ -889,12 +994,12 @@ box-shadow: 0 0 1px grey;
 }
 
 .blog-content-box p:first-child{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #8695B0;
 }
 
 .blog-content-box p:nth-child(3){
-  font-size: 1.13rem;
+  font-size: 1.1rem;
   margin-bottom:1rem;
   color: #7498AC;
 }
@@ -908,7 +1013,7 @@ box-shadow: 0 0 1px grey;
   width: 100%;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 25px;
-  padding: 1.5rem;
+  padding: 1.3rem;
   background-color: #fff;
   display: flex;
   align-items: center;
